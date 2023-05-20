@@ -1,0 +1,32 @@
+  input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s !important;
+  }
+  .stratDC-input {
+    width: 100%;
+    flex: 1;
+    &-box{
+      display: flex;
+      width: 100%;
+    }
+    position: relative;
+    margin-bottom: $spacer-6;
+    &__text {
+      color: var(--theme-color);
+       border: none;
+       border-bottom: 2px solid #aaaa;
+       width: 100%;
+       background-color: transparent;
+       height: 35px;
+       padding: 0;
+       line-height: 1;
+    }
+}
+@include mobile{
+  .stratDC-input {
+    &-box{
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}

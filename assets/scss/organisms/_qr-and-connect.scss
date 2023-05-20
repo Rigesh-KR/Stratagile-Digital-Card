@@ -1,0 +1,61 @@
+.stratDC-connect{
+    display: flex;
+    &__qr{
+        width:50%;
+        font-size: 0;
+        display: flex;
+        align-items: flex-start;
+        padding-right: 10px;
+        overflow: hidden;
+        img{
+            width: 100%;
+             border: 1px solid #AAAAAA;
+        }
+    }
+    &__nav{
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-left: 10px;
+    }
+    &__btn{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:50%;
+        background-color: var(--theme-color);
+        padding: $spacer-2 0;
+        border-right: 1px solid $color-white;
+        border-bottom: 1px solid $color-white;
+        &--cm{
+            background-color: $color-grey;
+            border-right: 0;
+        }
+        &--wa{
+            background-color: $color-grey;
+            border-bottom: 0px;
+        }
+        &--em{
+            background-color: var(--theme-color);
+        }
+        &:last-child{
+            border-right: none;
+            border-right: 0;
+            border-bottom: 0px;
+        }
+        img{
+            width:30%;
+            margin-bottom: $spacer-2;
+        }
+    }
+    &__title{
+        display: block;
+        text-align: center;
+        font-size: 13px;
+        color: $color-white;
+        line-height: 14px;
+        font-weight: $font-light;
+    }
+}

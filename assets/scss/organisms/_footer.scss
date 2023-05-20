@@ -1,0 +1,86 @@
+.stratDC-bottom{
+    display: flex;
+    &__wrap{
+        padding: $spacer-4 0;
+    }
+    &__box{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 13px;
+        align-items: center;
+        justify-content: space-between;
+        &-txt{
+            font-size: 12px;
+            color: $color-black;
+            margin-bottom: $spacer-2;
+            line-height: 14px;
+            &:hover{
+                color: var(--theme-color);
+            }
+        }
+        &--location{
+            &-icns{
+                width: 20px;
+                height: 25px;
+                svg{
+                    width: 100%;
+                    path{
+                        fill:var(--theme-color);
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+        &--sociable{
+            &-icns{
+                width:40px;
+                height:40px;
+                svg{
+                    width: 100%;
+                    path{
+                        fill:none;
+                    }
+                    .cls-1{
+                        stroke:var(--theme-color);
+                        fill: none;
+                        stroke-miterlimit: 10;
+                        stroke-width: .63px;
+                    }
+                    .cls-2 {
+                        fill: #c73b3c;
+                    }
+                }
+            }
+            .stratDC-bottom__box-txt{
+                &:hover{
+                    color: $color-black;
+                }
+            }
+        }
+        &-in{
+            display: flex;
+        }
+    }
+}
+.stratDC-bottomLast{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--theme-color);
+    padding: $spacer-2 0;
+    img{
+        margin: $spacer-1;
+        width: 30px;
+    }
+    &__link{
+        color:$color-white;
+        font-size:18px;
+        font-weight: $font-semi-bold;
+        &:hover{
+            color: $color-white;
+        }
+    }
+}

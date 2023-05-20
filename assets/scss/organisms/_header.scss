@@ -1,0 +1,23 @@
+.stratDC-header{
+    &__wrap{
+    background-color: var(--theme-color);
+    padding: 50px 0 $spacer-3;
+    // background-image: url("../images/banner-trans.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    }
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__logo {
+        width: 120px;
+        font-size: 0;
+    }
+}
+.stratDC-banner{
+    img{
+        width: 100%;
+    }
+}

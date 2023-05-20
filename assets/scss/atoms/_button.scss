@@ -1,0 +1,51 @@
+.stratDC-btn{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: $font-semi-bold;
+    color: $color-white;
+    background-color: $color-red;
+    box-shadow: 0px 0px 0px 2px $color-red;
+    padding: $spacer-2 $spacer-4;
+     &__text{
+         position: relative;
+         z-index: 1;
+         color: $color-white;
+    }
+     &::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: $color-white;
+        transition: all ease 0.2s;
+    }
+    &:hover{
+        .stratDC-btn__text{
+            z-index: 1;
+            color: $color-red;
+        }
+        &::before{
+            z-index: 0;
+            width: 100%;
+        }
+    }
+    &--trans{
+        color: $color-white;
+        background-color: transparent;
+        padding: $spacer-1 $spacer-4;
+         &:hover{
+            .stratDC-btn__text{
+                z-index: 1;
+                color: $color-white !important;
+            }
+            &::before{
+                z-index: 0;
+                width: 100%;
+                background-color: $color-red;
+            }
+        }
+    }
+}
