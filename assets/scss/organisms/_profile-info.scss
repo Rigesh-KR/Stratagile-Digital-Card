@@ -65,13 +65,13 @@
                         fill:none;
                     }
                     .cls-1{
-                        stroke:var(--theme-color);
+                        stroke:$color-black;
                         fill: none;
                         stroke-miterlimit: 10;
                         stroke-width: .63px;
                     }
                     .cls-2 {
-                        fill: #c73b3c;
+                        fill: var(--theme-color);
                     }
             }
         }

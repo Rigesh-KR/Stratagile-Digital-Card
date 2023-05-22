@@ -7,7 +7,6 @@
         width: 50%;
         display: flex;
         flex-direction: column;
-        text-align: center;
         font-size: 13px;
         align-items: center;
         justify-content: space-between;
@@ -21,35 +20,52 @@
             }
         }
         &--location{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            position: relative;
             &-icns{
-                width: 20px;
-                height: 25px;
+                width: 18px;
+                height: 23px;
+                margin-right: 10px;
+                margin-top: 2px;
                 svg{
                     width: 100%;
-                    path{
-                        fill:var(--theme-color);
-                        background-color: transparent;
-                    }
                 }
+                path{
+                    fill:var(--theme-color);
+                    background-color: transparent;
+                }
+            }
+            &::before{
+                content: "";
+                height: 100%;
+                width: 1px;
+                right:-13px;
+                top: 0;
+                position: absolute;
+                background: rgb(255,255,255);
+                background: linear-gradient(180deg, rgba(255,255,255,1) 0%, var(--theme-color), rgba(255,255,255,0) 100%);
             }
         }
         &--sociable{
             &-icns{
-                width:40px;
-                height:40px;
+                width:30px;
+                height:30px;
                 svg{
                     width: 100%;
                     path{
                         fill:none;
                     }
                     .cls-1{
-                        stroke:var(--theme-color);
+                        stroke:$color-black;
                         fill: none;
                         stroke-miterlimit: 10;
                         stroke-width: .63px;
                     }
                     .cls-2 {
-                        fill: #c73b3c;
+                        fill: var(--theme-color)
                     }
                 }
             }
@@ -58,10 +74,18 @@
                     color: $color-black;
                 }
             }
+            &-wrap{
+                display: flex;
+                flex-direction: column;
+            }
+            .stratDC-bottom__box-txt{
+                color: var(--theme-color);
+            }
         }
         &-in{
             display: flex;
         }
+        
     }
 }
 .stratDC-bottomLast{
@@ -81,6 +105,17 @@
         font-weight: $font-semi-bold;
         &:hover{
             color: $color-white;
+        }
+    }
+    &__logos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: $spacer-4;
+        border-bottom: 10px solid var(--theme-color);
+        img{
+            width: 30%;
+            margin: 0 10px;
         }
     }
 }

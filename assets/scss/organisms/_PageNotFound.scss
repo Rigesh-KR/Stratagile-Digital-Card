@@ -1,0 +1,20 @@
+.stratDC-pnf{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    align-items: center;
+    text-align: center;
+    &__title{
+        font-size: 145px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        line-height: 1;
+    }  
+    &__subH{
+        font-size: 40px;
+    }
+    p{
+        font-size: 14px;
+        margin-bottom: $spacer-3;
+    }
+}
