@@ -129,6 +129,15 @@
         }
     }
 }
+.stratDC-btm{
+    &.stratDC-btm__landing{
+        .stratDC-bottomLast__logos{
+            img{
+                width: 10%;
+            }
+        }
+    }
+}
 @include mobile{
     .stratDC-bottom{
         display: flex;
@@ -158,6 +167,15 @@
         }
         &__logos{
             border-bottom: 10px solid var(--theme-color);
+        }
+    }
+    .stratDC-btm{
+        &.stratDC-btm__landing{
+            .stratDC-bottomLast__logos{
+                img{
+                    width: 20%;
+                }
+            }
         }
     }
 }
