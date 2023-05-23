@@ -1,3 +1,25 @@
-.dxbButton_Material{
-    background-color: var(--theme-color);
+.dxgvCommandColumn_Material .dxbButton_Material{
+    background-color: var(--theme-color) !important;
+}
+.bg-primary, .primary {
+    background-color:var(--theme-color);
+    color: #fff;
+}
+.stratDC-btn {
+    color: #fff;
+    background-color:var(--theme-colorbtn);
+    border-color: var(--theme-color);
+    &:hover{
+        background-color:var(--theme-color);
+        border-color:var(--theme-color);
+    }
+}
+.btn-green {
+    color: #fff;
+    background-color:var(--theme-colorbtn)!important;
+    border-color: var(--theme-color)!important;
+    &:hover{
+        background-color:var(--theme-color)!important;
+        border-color:var(--theme-color)!important;
+    }
 }
