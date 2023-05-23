@@ -1,5 +1,7 @@
 .stratDC-connect{
     display: flex;
+    padding-left:154px;
+    margin-top: -$spacer-4;
     &__qr{
         width:50%;
         font-size: 0;
@@ -57,5 +59,11 @@
         color: $color-white;
         line-height: 14px;
         font-weight: $font-light;
+    }
+}
+@include mobile{
+    .stratDC-connect{
+    padding-left: 0;
+    margin-top: 0;
     }
 }

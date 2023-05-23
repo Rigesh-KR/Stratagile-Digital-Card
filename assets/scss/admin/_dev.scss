@@ -1,6 +1,13 @@
 .dxgvCommandColumn_Material .dxbButton_Material{
     background-color: var(--theme-color) !important;
 }
+.dxgvCommandColumn_Material.btn-green .dxbButton_Material{
+    background-color: var(--theme-colorbtn) !important;
+    &:hover{
+        background-color:var(--theme-color)!important;
+        border-color:var(--theme-color)!important; 
+    }
+}
 .bg-primary, .primary {
     background-color:var(--theme-color);
     color: #fff;
@@ -14,12 +21,42 @@
         border-color:var(--theme-color);
     }
 }
-.btn-green {
+.btn-green, .btn-green.dxgvCommandColumn_Material {
     color: #fff;
     background-color:var(--theme-colorbtn)!important;
     border-color: var(--theme-color)!important;
     &:hover{
         background-color:var(--theme-color)!important;
-        border-color:var(--theme-color)!important;
+        border-color:var(--theme-color)!important; 
     }
 }
+.dxpLite_Material .dxp-current{
+    background-color:var(--theme-color) !important;
+}
+.dxgvControl_Material .dxgvADSB:hover::before {
+    background-color:var(--theme-color)!important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+  }
+.dxflNestedControlCell_Material{
+    .dxbButton_Material {
+        color: #fff;
+        background-color:var(--theme-colorbtn)!important;
+        &:hover{
+            background-color:var(--theme-color)!important; 
+        }
+    }
+  }
+  .dxgvFocused_Material{
+    border: 1px solid var(--theme-colorbtn)!important;
+  }
+  body{
+    min-height: 100% !important;
+    padding-top: 60px !important;
+  }
+  .stratDC-admin{
+    &__pageHead{
+        font-size: $spacer-4;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+  }

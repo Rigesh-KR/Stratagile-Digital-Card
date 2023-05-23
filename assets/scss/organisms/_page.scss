@@ -3,4 +3,34 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    border-bottom: 10px solid var(--theme-color);
+    height: 100%;
+}
+.stratDC-contentArea{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: $spacer-4;
+}
+.stratDC-colRight{
+    padding-right:40px;
+}
+@include tablet{
+    .stratDC-colRight{
+        padding-right:16px;
+    }
+}
+@include mobile{
+    .stratDC-main{
+        border-bottom: 0px solid var(--theme-color);
+    }
+    .stratDC-contentArea{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 0px solid var(--theme-color);
+        padding-bottom: 0;
+    }
+    .stratDC-colRight{
+        padding-right:0px;
+    }
+    
 }

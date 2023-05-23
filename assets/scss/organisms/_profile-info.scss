@@ -1,9 +1,10 @@
 .stratDC-profile{
-    &__wrap{
-        margin: -30px 0 $spacer-4;
-    }
     display: flex;
-    align-items: end;
+    flex-direction: row;
+    // align-items: end;
+    &__wrap{
+        margin: -30px 0 $spacer-2;
+    }
     &__pic{
         width:140px;
         height: 140px;
@@ -12,6 +13,7 @@
         border: 2px solid var(--theme-color);
         border-radius: 50%;
         padding: 5px;
+        flex-direction: column;
         &-img{
             border-radius: 50%;
             width: 100%;
@@ -29,36 +31,89 @@
         justify-content: center;
     }
     &__name{
-        font-size:20px;
+        font-size:25px;
         color: $color-black;
         font-weight: $font-bold;
-        line-height:20px;
+        line-height:25px;
         margin-bottom:$spacer-1;
     }
     &__desg{
-        font-size: 15px;
+        font-size: 18px;
         color: var(--theme-color);
         font-weight:$font-medium;
         margin-bottom: $spacer-2;
         line-height: 1;
     }
     &__contact{
-        font-size: 11px;
+        font-size: 13px;
         color: $color-black;
         font-weight:$font-regular;
-        margin-bottom: $spacer-1; 
+        margin-bottom: $spacer-2; 
         line-height: 14px;
         a{
             color: $color-black;
-            font-size: 11px;
+            font-size: 13px;
         }
     }
     &__connect{
         display: flex;
-        margin-top: $spacer-2;
+        margin-top: $spacer-4;
+        &__pic{
+            flex-direction: row;
+        }
         &-icn{
             width:30px;
             height:30px;
+            svg{
+                width: 100%;
+                transition: 0.3s;
+                path{
+                    fill:none;
+                }
+                .cls-1{
+                    stroke:$color-black;
+                    fill: none;
+                    stroke-miterlimit: 10;
+                    stroke-width: .63px;
+                }
+                .cls-2 {
+                    fill: var(--theme-color);
+                }     
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+@include mobile{
+    .stratDC-profile{
+        display: flex;
+        flex-direction: row;
+        &__wrap{
+            margin: -30px 0 $spacer-4;
+        }
+        &__name{
+            font-size:20px;
+            line-height:20px;
+        }
+        &__desg{
+            font-size: 15px;
+        }
+        &__contact{
+            font-size: 11px;
+            margin-bottom: $spacer-2;
+            a{
+                color: $color-black;
+                font-size: 11px;
+            }
+        }
+        &__connect{
+            display: flex;
+            margin-top: $spacer-2;
+            &-icn{
+                width:30px;
+                height:30px;
                 svg{
                     width: 100%;
                     path{
@@ -73,21 +128,9 @@
                     .cls-2 {
                         fill: var(--theme-color);
                     }
+                    
+                }
             }
-        }
-    }
-}
-@include mobile{
-    .qbf-profile{
-        &__qr{
-            img{
-                width: 100%;
-                max-width: none;
-            }
-        }
-        &__name{
-            font-size:5vw;
-            line-height:5vw;
         }
     }
 }

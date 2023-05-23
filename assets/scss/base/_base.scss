@@ -79,8 +79,8 @@ button {
 
 @include mobile-tablet {
   .content-wrapper {
-    padding-left: $spacer-5;
-    padding-right: $spacer-5;
+    padding-left: $spacer-3;
+    padding-right: $spacer-3;
   }
 
   .hide-mobile-tablet {
