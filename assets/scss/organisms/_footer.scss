@@ -138,10 +138,10 @@
             }
         }
         .stratDC-bottom__box-txt{
-            font-size: 18px;
+            font-size: 16px;
             color: $color-black;
             margin-bottom: $spacer-2;
-            line-height: 24px;
+            line-height: 22px;
             // display: flex;
             // flex-direction: column;
             &-s{
@@ -188,7 +188,7 @@
             border-bottom: 10px solid var(--theme-color);
             padding: $spacer-3 0 ;
             img{
-                width: 110px;
+                width:80px;
             }
         }
     }
@@ -197,7 +197,7 @@
             .stratDC-bottomLast__logos{
                 padding: $spacer-3 0 ;
                 img{
-                    width: 110px;
+                    width: 80px;
                 }
             }
             .stratDC-bottom__box-txt{

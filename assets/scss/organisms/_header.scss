@@ -24,7 +24,7 @@
 @include mobile{
     .stratDC-header{
         &__wrap{
-            padding: 50px 0 $spacer-3;
+            padding: $spacer-3 0 ;
         }
     }
 }
