@@ -11,8 +11,12 @@
     flex-direction: row;
     padding-bottom: $spacer-4;
 }
+.stratDC-colLeft{
+    flex: 1;
+}
 .stratDC-colRight{
     padding-right:40px;
+    width: 50%;
 }
 @include tablet{
     .stratDC-colRight{
@@ -31,6 +35,7 @@
     }
     .stratDC-colRight{
         padding-right:0px;
+        width: 100%;
     }
     
 }

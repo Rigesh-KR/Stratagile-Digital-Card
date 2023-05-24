@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     &__wrap{
-        padding: 0 0 30px;
+        padding: 0 0 10px;
         .content-wrapper{
             padding: 0;
         }
@@ -16,10 +16,10 @@
         align-items: center;
         justify-content: space-between;
         &-txt{
-            font-size: 12px;
+            font-size: 14px;
             color: $color-black;
             margin-bottom: $spacer-2;
-            line-height: 14px;
+            line-height: 20px;
             &:hover{
                 color: var(--theme-color);
             }
@@ -121,10 +121,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: $spacer-3;
+        padding: $spacer-3 0 0;
         border-bottom: 0px solid var(--theme-color);
         img{
-            width: 30%;
+            width:24%;
             margin: 0 10px;
         }
     }
@@ -132,9 +132,22 @@
 .stratDC-btm{
     &.stratDC-btm__landing{
         .stratDC-bottomLast__logos{
+            padding: $spacer-3 0 ;
             img{
-                width: 10%;
+                width:75px;
             }
+        }
+        .stratDC-bottom__box-txt{
+            font-size: 18px;
+            color: $color-black;
+            margin-bottom: $spacer-2;
+            line-height: 24px;
+            // display: flex;
+            // flex-direction: column;
+            &-s{
+                display: block;
+            }
+            
         }
     }
 }
@@ -157,6 +170,12 @@
                 align-items: flex-start;
                 position: relative;
             }
+            &-txt{
+                font-size: 14px;
+                color: $color-black;
+                margin-bottom: $spacer-2;
+                line-height: 16px;
+            }
         }
     }
     .stratDC-bottomLast{
@@ -167,13 +186,29 @@
         }
         &__logos{
             border-bottom: 10px solid var(--theme-color);
+            padding: $spacer-3 0 ;
+            img{
+                width: 110px;
+            }
         }
     }
     .stratDC-btm{
         &.stratDC-btm__landing{
             .stratDC-bottomLast__logos{
+                padding: $spacer-3 0 ;
                 img{
-                    width: 20%;
+                    width: 110px;
+                }
+            }
+            .stratDC-bottom__box-txt{
+                font-size: 13px;
+                color: $color-black;
+                margin-bottom: $spacer-2;
+                line-height: 16px;
+                display: flex;
+                flex-direction: column;
+                &-f{
+                    display: block;
                 }
             }
         }
